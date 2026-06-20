@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 160px; }
+    h3 { margin-top: 0; font-size: 14px; margin-bottom: 8px; }
+    select { width: 100%; padding: 5px; font-size: 14px; margin-bottom: 12px; }
+    .toggle-container { display: flex; align-items: center; font-size: 12px; gap: 6px; cursor: pointer; }
+    input[type="checkbox"] { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h3>Select Quality</h3>
+  <select id="qualitySelect">
+    <option value="highres">Max (4K+)</option>
+    <option value="hd2160">2160p (4K)</option>
+    <option value="hd1440">1440p</option>
+    <option value="hd1080">1080p</option>
+    <option value="hd720">720p</option>
+    <option value="large">480p</option>
+    <option value="medium">360p</option>
+    <option value="small">240p</option>
+    <option value="tiny">144p</option>
+  </select>
+
+  <hr style="border: 0; border-top: 1px solid #ccc; margin: 10px 0;">
+
+  <label class="toggle-container">
+    <input type="checkbox" id="sharpCornersToggle">
+    <span>Sharp Corners Layout</span>
+  </label>
+
+  <script src="popup.js"></script>
+</body>
+</html>
